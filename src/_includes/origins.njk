@@ -1,0 +1,49 @@
+<main class="main ">
+  <div class="bghighlight pr-6 pl-6">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="wrapper">
+
+
+<div class="grid grid-cols-1 w-full">
+  <div class="collection">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-12">
+
+      <div class="col-span-2">
+        <h1>Unknown Origin</h1>
+        <h2 class="collection__title">
+          We are many.<br/>
+          We are the master of the elements.<br/>
+          <br/>
+          What are they? Who are they? Where do they come from?<br/>
+          The parent collection of the Unknown Blobs.
+        </h2>
+      </div>
+      <div>
+        <a href="https://www.nftexplorer.app/collection/unknown-origin" class="button">nftexplorer.app</a>
+      </div>
+
+    </div>
+    <div class="grid grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+
+      {% for origin in origins %}
+        <div class="collection__item">
+          <div class="collection__image">
+            <img src="/origins/{{ origin.id}}.png" loading="lazy">
+          </div>
+          <div class="collection__content">
+            <div class="collection__name">{{ origin.name}}</div>
+          </div>
+        </div>   
+      {% endfor %}
+
+    
+
+    </div>
+  </div>
+</div>
+
+
+     </div>
+      </div>
+    </div>
+  </main>

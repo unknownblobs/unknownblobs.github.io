@@ -1,0 +1,44 @@
+<main class="main">
+  <div class="bghighlight pr-6 pl-6">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="wrapper">
+
+
+<div class="grid grid-cols-1 w-full">
+  <div class="collection">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-12">
+
+      <div class="col-span-2">
+        <h1>Unknown Searcher</h1>
+        <h2 class="collection__title">
+          A prelaunch collection for the Unknown Blobs.<br/>
+          They are a the Unknown Searcher who tryes that the Unknown Blobs find there new master. 
+        </h2>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.nftexplorer.app/collection?creator=C7WGQ3OBOW3373DCTRO7EY3CECEJWN27PZJEJAM4P63RD75UTWSYUL3Y5M" class="button">nftexplorer.app</a>
+      </div>
+
+    </div>
+    <div class="grid grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+
+      {% for searcher in searcher %}
+        <div class="collection__item">
+          <div class="collection__image">
+            <img src="/searcher/{{ searcher.edition}}.png" loading="lazy">
+          </div>
+          <div class="collection__content">
+            <div class="collection__name">{{ searcher.name}}</div>
+          </div>
+        </div>    
+      {% endfor %}        
+
+    </div>
+  </div>
+</div>
+
+
+     </div>
+      </div>
+    </div>
+  </main>

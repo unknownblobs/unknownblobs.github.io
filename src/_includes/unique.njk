@@ -1,0 +1,44 @@
+<main class="main">
+  <div class="bghighlight pr-6 pl-6">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="wrapper">
+
+
+<div class="grid grid-cols-1 w-full">
+  <div class="collection">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-12">
+
+      <div class="col-span-2">
+        <h1>Unknown Blobs <br/><div>(Custom Unique)</div></h1>
+        <h2 class="collection__title">
+          This is an additional collection of Unknown Blobs with 
+          unique not generated and cooperated Unknown Blobs.
+        </h2>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.nftexplorer.app/collection?creator=33T5UK5JT53UHY47BDVJFVI3B2OUU7IAMVQJHYOWU3N4EQOZLOBTCLSGLE" class="button">nftexplorer.app</a>
+      </div>
+
+    </div>
+    <div class="grid grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+
+      {% for unique in uniques %}
+        <div class="collection__item">
+          <div class="collection__image">
+            <img src="/unique/{{ unique.id}}.png" loading="lazy">
+          </div>
+          <div class="collection__content">
+            <div class="collection__name">{{ unique.name}}</div>
+          </div>
+        </div>    
+      {% endfor %}        
+
+    </div>
+  </div>
+</div>
+
+
+     </div>
+      </div>
+    </div>
+  </main>

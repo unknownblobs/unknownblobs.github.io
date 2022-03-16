@@ -1,0 +1,109 @@
+[
+  {
+    "trait_type": "Color",
+    "attributes": [
+      { "value": "-" },
+      { "value": "blue" },
+      { "value": "green" },
+      { "value": "red" },
+      { "value": "yellow" },
+      { "value": "purple" }
+    ]
+  },
+  {
+    "trait_type": "Background",
+    "attributes": [
+        { "value": "-" },
+        { "value": "Background1 " },
+        { "value": "Background2" },
+        { "value": "Background3" },
+        { "value": "Background4" },
+        { "value": "Background5" },
+        { "value": "Background6" },
+        { "value": "Background7" },
+        { "value": "Background8" }
+    ]
+  },
+  {
+    "trait_type": "Body",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Smooth" },
+      { "value": "Structure" }
+    ]
+  },
+  {
+    "trait_type": "Mutation",
+    "attributes": [
+      { "value": "-" },
+      { "value": "none " }
+    ]
+  },
+  {
+    "trait_type": "Eyes",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Annoyed" },
+      { "value": "AnnoyedOneEye" },
+      { "value": "LeftOneEye" },
+      { "value": "Normal" },
+      { "value": "Right" },
+      { "value": "Top" }
+    ]
+  },
+  {
+    "trait_type": "Feeds",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Feelers2" },
+      { "value": "Slime" },
+      { "value": "Fly" }
+    ]
+  },
+  {
+    "trait_type": "Head",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Arcane" },
+      { "value": "Crown" },
+      { "value": "Fly" },
+      { "value": "none" },
+      { "value": "TousledHear" }
+    ]
+  },
+  {
+    "trait_type": "Left",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Eye" },
+      { "value": "MiddleFinger" },
+      { "value": "Sensor" },
+      { "value": "Show" },
+      { "value": "Staff" },
+      { "value": "Weed" }
+    ]
+  },
+  {
+    "trait_type": "Right",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Lightball" },
+      { "value": "Muscles" },
+      { "value": "none" },
+      { "value": "Shield" }
+    ]
+  },
+  {
+    "trait_type": "Mouth",
+    "attributes": [
+      { "value": "-" },
+      { "value": "Eyes" },
+      { "value": "none" },
+      { "value": "Open" },
+      { "value": "Sad" },
+      { "value": "Small" },
+      { "value": "Teeth" },
+      { "value": "TeethOpen" }
+    ]
+  }
+]

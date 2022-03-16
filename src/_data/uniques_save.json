@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Coming",
+    "id": "Coming"
+  },
+  {
+    "name": "Shy",
+    "id": "Shy"
+  },
+  {
+    "name": "Opening",
+    "id": "Opening"
+  },
+  {
+    "name": "Glutton",
+    "id": "Glutton"
+  },
+  {
+    "name": "Burning",
+    "id": "Burning"
+  },
+  {
+    "name": "Arcanized",
+    "id": "Arcanized"
+  },
+  {
+    "name": "Fatally",
+    "id": "Fatally"
+  },
+  {
+    "name": "Portal",
+    "id": "Portal"
+  },
+  {
+    "name": "Necromancer",
+    "id": "Necromancer"
+  },
+  {
+    "name": "Flamingo",
+    "id": "Flamingo"
+  },
+  {
+    "name": "Origin",
+    "id": "Origin"
+  },
+  {
+    "name": "Fire",
+    "id": "Fire"
+  },
+  {
+    "name": "Water",
+    "id": "Water"
+  },
+  {
+    "name": "Earth",
+    "id": "Earth"
+  },
+  {
+    "name": "Air",
+    "id": "Air"
+  },
+  {
+    "name": "Void",
+    "id": "Void"
+  }
+]

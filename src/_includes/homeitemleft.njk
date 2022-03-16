@@ -1,0 +1,35 @@
+{% macro field(title, subtitle, text, number, image) %}
+
+
+
+<main class="main_small" id="{{number}}">
+   <div class="bghighlight bghighlight-left pr-6 pl-6">
+   <div class="max-w-screen-lg mx-auto">
+      <div class="wrapper_small">
+         <div class="">
+            <div class=" grid grid-cols-1 gap-4 sm:grid-cols-6 mb-6">
+               <div class=" home__image col-span-3">
+                   <img src="{{ '/' + image | url }}" class="home__image">
+               </div>
+                <div class="home__text col-span-3">
+                  <div>
+                     <h2 class="title_small">{{title}}</h2>
+                     <h3>{{subtitle}}</h3>
+                     <p>{{text}}
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  </div>
+  <div class="arrow">
+      <i class='fas fa-angle-down' style='font-size:36px'></i>
+   </div>
+</main>
+
+
+
+
+{% endmacro %}

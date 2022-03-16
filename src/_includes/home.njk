@@ -1,0 +1,176 @@
+<main class="main">
+  <div class="bghighlight pr-6 pl-6">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="wrapper">
+        <div class="mt-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div class="home__text">
+            <h1>{{ metadata.home_title }}</h1>
+            <h2>
+              <div>
+                <strong>
+                  {{ metadata.home_text2 }}</strong>
+              </div>
+            </h2>
+            <div class="home__create">
+              {{ metadata.home_created }}
+            </div>
+          </div>
+          <div class="home__image">
+            <img src="{{ '/1.png' | url }}" class="home__image"></div>
+          </div>
+          <div class="mt-auto grid grid-cols-1 gap-4">
+            <div class="featuretitle">More Informations:</div>
+            <div class="feature ">
+              <div>
+                <a href="#1" class="button button-x">182 Traits
+                </a>
+              </div>
+              <div>
+                <a href="#2" class="button button-x">Color effects traits
+                </a>
+              </div>
+              <div>
+                <a href="#3" class="button button-x">Unknown Searcher
+                </a>
+              </div>
+              <div>
+                <a href="#4" class="button button-x">Story Traits</a>
+              </div>
+              <div>
+                <a href="#5" class="button button-x">Unique
+                </a>
+              </div>
+              <div>
+                <a href="#6" class="button button-x">Mystical Items
+                </a>
+              </div>
+              <div>
+                <a href="#7" class="button button-x">more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow">
+      <i class='fas fa-angle-down' style='font-size:36px'></i>
+    </div>
+  </main>
+  <main class="main_small">
+    <div class="bghighlight pr-6 pl-6 quote">
+      <div class="max-w-screen-lg mx-auto pr-6 pl-6">
+        <div class="">
+          <div class=" grid grid-cols-1 gap-4">
+            <div class="home__text ">
+              "They are hundreds. Our familiars. <br/>Join them on their journey to become a great wizard. They are a bit shy and
+              sometimes a bit stupid but they're the most loyal companions you can find."
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <i class='fas fa-angle-down' style='font-size:36px'></i>
+      </div>
+    </div>
+  </main>
+
+  {% import "./homeitem.njk" as field %}
+  {% import "./homeitemleft.njk" as fieldleft %}
+
+  {{ fieldleft.field(
+    number='1',
+    title='990 Unknown Blobs', 
+    subtitle='They are many', 
+    text='
+      In the collection are 990 Unknown Blobs. They were created with much love to 
+      detail and passion for pixelart. The special thing about the collection are 
+      the color trait thats effected all traits and the story traits. But more about 
+      that below :)
+    ',
+    image='mmm.png') 
+  }}
+
+  {{ field.field(
+    number='1',
+    title='182 Traits', 
+    subtitle='More traits more fun!', 
+    text='
+      To get as much variety as possible in the collection there are 182 traits in total.
+      One big focus was on the left / right hands and the head, here are the most and 
+      varied traits. It was also important that the traits could be easily distinguished
+      from each other but more about that in the story traits section.
+    ',
+    image='traits.gif') 
+  }}
+
+  {{ fieldleft.field(
+    number='3',
+    title='Color traits affects every other trait', 
+    subtitle='Not all traits are equal.', 
+    text='
+      An important note is that the trait: "color" influences all other traits. 
+      As an example: if you have the yellow color trait, e.g. the hands, body 
+      and feet are automatically gets the this yellow color. The collection 
+      has 182 traits x 10 colors makes 1820 different layer (traits) in preparation.
+    ',
+    image='colors.gif') 
+  }}
+
+  {{ field.field(
+    number='4',
+    title=' Story Traits', 
+    subtitle='There are a few different story in the traits.', 
+    text='
+      A key intention behind this collection is that the traits should be special 
+      and this is where the "story traits" come into play. In total, there are 
+      10 stories that are told using different traits. Lets take the lightball 
+      as an example. First a small ball of light falls down. Then the blob 
+      catches it and plays around with it a bit. When he realizes that it 
+      has magic powers he tries to bundle the magic and create something
+      bigger. Who knows if he will make it.
+  ',
+    image='story.gif') 
+  }}
+
+  {{ fieldleft.field(
+    number='5',
+    title='Unique - The final Story', 
+    subtitle='Every story must be told to the end.', 
+    text='
+      After you have already seen that there are many story traits. 
+      For each story there is also a matching ending. These are reflected in these Unique Blobs.
+    ',
+    image='unique.png') 
+  }}
+
+  {{ field.field(
+    number='2',
+    title='Unknown Searcher', 
+    subtitle='Unknown Blobs "hidden-pre-event" (over)', 
+    text='
+      This helper is trying to help the Blobs to find there new master.
+      If you have enough luck your Unknown Searcher may find a Blob.
+    ',
+    image='searcher.png') 
+  }}
+
+  {{ fieldleft.field(
+    number='2',
+    title='Mystical Items', 
+    subtitle='What could these mystical objects be?', 
+    text='
+      Reveal after launch and depends on the community votes... Work in progress...
+    ',
+    image='item.png') 
+  }}
+
+  {{ field.field(
+    number='6',
+    title='Future', 
+    subtitle='
+      Maybe some cooperations, new collection or somthing completely different?
+      Who knows what the future will bring...
+    ', 
+    text='') 
+  }}

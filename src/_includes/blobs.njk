@@ -1,0 +1,100 @@
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".collection__item");
+
+    document.querySelectorAll("select").forEach(element => {
+      element.addEventListener("change", () => {
+        display();
+      });
+    });
+
+    function display() {
+      document.querySelectorAll("select").forEach(element => {
+        const id = element.id.toLowerCase();
+        const value =  element.value;
+
+        for (const item of items) {
+          if (
+            item.getAttribute("data-"+id+"") === value || 
+            value === '-'
+          ) {
+            item.classList.remove(id+"-hide");
+          } else {
+            item.classList.add(id+"-hide");}   
+          }
+        });
+      }
+
+    document.getElementById("reset").addEventListener("click", remove);
+    function remove() {
+      items.forEach(element => {
+        element.classList.remove("body-hide", "mutation-hide", "eye-hide","feeds-hide","head-hide","left-hide","right-hide","mouth-hide","colors-hide","background-hide");
+      });
+      document.querySelectorAll("select").forEach(element => {
+        element.selectedIndex = 0;
+      });
+    }
+  });
+</script>
+
+
+
+
+<main class="main">
+  <div class="bghighlight pr-6 pl-6">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="wrapper">
+      
+
+
+<div class="grid grid-cols-1 w-full">
+  <div class="collection">
+    <div class="collection__forms grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-6">
+
+      {% for trait in rarity %}
+        <div class="collection__form">
+          <label for="{{ trait.trait_type}}" class="collection__label">
+            {{ trait.trait_type }}
+            ({{ trait.attributes.length }})
+          </label>
+          <select  id="{{ trait.trait_type }}" class="collection__select">
+            {% for value in trait.attributes %}
+              <option value="{{ value.value}}">
+                {{ value.value}}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+      {% endfor %}
+
+      <div class="collection__form">
+        <button class="button" id="reset">Reset</button>
+      </div>
+
+    </div>
+    <div class="grid grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+
+      {% for blob in blobs %}
+        <div class="collection__item"
+          {% for attribute in blob.attributes %}
+            data-{{ attribute.trait_type}}="{{ attribute.value}}"
+          {% endfor %}
+        >
+          <div class="collection__image">
+            <img src="/blobs/{{ blob.edition}}.png" loading="lazy">
+          </div>
+          <div class="collection__content">
+            <div class="collection__name">{{ blob.name}}</div>
+          </div>
+        </div>   
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</main>
