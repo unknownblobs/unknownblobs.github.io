@@ -9,7 +9,6 @@ const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function(eleventyConfig) {
 
- 
 
   if (process.env.ELEVENTY_PRODUCTION) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);
@@ -37,7 +36,8 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      input: "src"
+      input: "src",
+      output: "docs"
     },
     pathPrefix
   }
@@ -45,7 +45,7 @@ module.exports = function(eleventyConfig) {
 
 function browserSyncReady(err, bs) {
   bs.addMiddleware("*", (req, res) => {
-    const content_404 = fs.readFileSync('_site/404.html');
+    const content_404 = fs.readFileSync('docs/404.html');
     // Provides the 404 content without redirect.
     res.write(content_404);
     // Add 404 http status code in request header.
